@@ -12,7 +12,7 @@ export const theme = extendTheme({
       "400" : "#797d9a",
       "300" : "#9699b0",
       "200" : "#b3b5c6",
-      "100" : "#d1d2dc",
+      "100" : "#DADADA",
       "50" : "##F5F8FA",
     }
   },
@@ -27,6 +27,7 @@ export const theme = extendTheme({
       //para que o body tenha
       body:{
         bg: 'gray.50',
+        color: 'gray.100'
       }
     }
   }
