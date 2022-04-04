@@ -83,7 +83,7 @@ export function Carousel(){
       </SwiperSlide>
 
       <SwiperSlide>
-      <Link as="a" href="../continents/oceania" >
+      <Link as="a" href="../continents/oceania" textDecoration="none" >
         <Flex backgroundImage="../images/Oceania.svg" height="40.75rem" pb="10" align="center" justifyContent="center">
           <VStack>
           <Text fontSize="3rem">Oceania</Text>

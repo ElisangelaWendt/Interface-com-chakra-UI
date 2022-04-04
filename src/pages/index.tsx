@@ -1,8 +1,13 @@
-import { Divider, Flex, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { Divider, Flex, HStack, Image, Link, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import { Carousel } from "../components/Carousel";
 import { Navbar } from "../components/Navbar";
 
 export default function Home() {
+  const isWideVersion = useBreakpointValue({
+    base:false,
+    lg:true
+  })
+
   return (
     <>
       <VStack>
@@ -35,7 +40,7 @@ export default function Home() {
           position="absolute"
           pt="11rem"
         />
-        <HStack  spacing="8.125rem" color="gray.600" pb="5rem" fontSize="24px" w="100vw" justifyContent="center">
+        <HStack  spacing="8.125rem" color="gray.600" pb="5rem" pt="7.125rem" fontSize="24px" w="100vw" justifyContent="center">
           <VStack w="9.875rem">
           <Image src="../images/cocktail.svg"/>
           <Text >Vida Noturna</Text>
